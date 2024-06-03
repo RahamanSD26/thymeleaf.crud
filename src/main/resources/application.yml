@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://localhost:27017/SpringDemo
+twitter:
+  username:
+  password:
+pyproxy:
+  apiKey:

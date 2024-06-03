@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container mt-3" >
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <h1 class="text-center mb-3"> Fill the product details</h1>
+            <br>
+
+            <!-- This is add Product form -->
+            <form action="handle-product" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Product Name</label>
+                    <input name="name" required type="text" class="form-control" id="name" aria-describedby="emailhelp" placeholder="Enter here">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Product Description</label>
+                    <textarea required
+                              id="description"
+                              name="description"
+                              placeholder="Enter your Description here "
+                              class="form-control"
+                              style="height:120px;"
+                    ></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="price" class="form-label">Product Price</label>
+                    <input name="price" required type="text" class="form-control" id="price" placeholder="Enter here">
+                </div>
+
+                <div class="container text-center">
+                    <a href="/product/"
+                       class="btn btn-outline-danger">Back</a>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+        </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
